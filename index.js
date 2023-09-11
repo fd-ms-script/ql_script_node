@@ -3,6 +3,9 @@
 
   cron: 0 0 0 * * *
   const $ = new Env("秒杀美团优惠券");
+  [task_local]
+  # 标题
+  0 0 0 * * * test.js, tag=标题, enabled=true
 */
 
 const { default: axios } = require('axios')
